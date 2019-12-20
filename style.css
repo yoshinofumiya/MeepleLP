@@ -1,0 +1,374 @@
+
+
+/* Box sizing rules */
+/* Box sizingの定義 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+/* デフォルトのpaddingを削除 */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+/* デフォルトのmarginを削除 */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+/* bodyのデフォルトを定義 */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+/* class属性を持つul、ol要素のリストスタイルを削除 */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+/* classを持たない要素はデフォルトのスタイルを取得 */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Natural flow and rhythm in articles by default */
+/* article要素内の要素に自然な流れとリズムを定義 */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+/* inputやbuttonなどのフォントは継承を定義 */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+body{
+  font-family: sans-serif;
+  /* font-weight: 400;
+  font-style: normal; */
+}
+
+
+.titile{
+  font-size: 60px;
+}
+.sub_ttl{
+  font-size: 48px;
+  font-weight: 600;
+}
+.text_ttl{
+  font-size: 28px;
+  font-weight: 600;
+}
+.text{
+  font-size: 18px;
+}
+/*  */
+section{
+  width: 90%;
+  margin: 0 auto;
+}
+.top{
+  background-image: url(img/Top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* 背景を暗くする用 */
+.top_back{
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.top_ttl{
+
+}
+.titile{
+  font-size: 60px;
+}
+.top_form{
+  background-color: #FF8A8B;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 10px;
+  width: 50%;
+  margin-top: 30px;
+}
+.top_form a{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+
+/* section2 */
+
+.sec2{
+  text-align: center;
+  padding-bottom: 40px;
+}
+.catch_top{
+  padding: 10px;
+}
+
+/* section\3 */
+.sec3{
+  text-align: center;
+}
+.sec3_main{
+  background: linear-gradient(to right,#FFF6F3,#FFD5C4);
+  padding-bottom: 20px;
+}
+.sec3_img{
+  width: 100%;
+  padding: 0;
+}
+.sec3_img img{
+  width: 33.3%;
+  display: inline;
+  margin: 0;
+}
+
+.sec3_graph_ttl{
+  margin: 40px auto;
+}
+.sec3_graph{
+  border-bottom: none;
+  height: 160px;
+  position: relative;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.sec3_graph p{
+  display: inline-block;
+  padding: 20px;
+  box-sizing: border-box;
+  border: solid 1px black;
+  width: 50%;
+  height: 80px;
+  position: absolute;
+}
+.bg_blue{
+  background-color: #40C3FF;
+}
+.bg_pink{
+  background-color: pink;
+}
+.bg_white{
+  background-color: white;
+}
+.cell_1{
+  top: 0;
+  left: 0;
+}
+.cell_2{
+  top: 0;
+  left: 50%;
+}
+.cell_3{
+  top: 80px;
+  left: 0;
+}
+.cell_4{
+  top: 80px;
+  left: 50%;
+}
+.sec3_btm{
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+
+
+.sec4{
+  text-align: center;
+}
+
+.pros_ttl{
+  margin: 40px 0;
+}
+.dis_inlbk{
+  display: inline-block;
+  vertical-align: top;
+}
+.dis_none{
+  display: none;
+}
+.pros{
+  width: 100%;
+  height: 250px;
+  margin: 0 auto;
+}
+.pros_img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-image: url("img/state_2.jpeg");
+}
+.pros_main{
+  height: 100%;
+}
+.pros_num{
+  vertical-align: top;
+  margin: 0 30px;
+  margin-top: 15px;
+}
+.pros_txt{
+  border-left: solid 2px black;
+  height: 200px;
+  padding: 30px;
+  text-align: left;
+}
+.pros_txt p{
+  padding-bottom: 10px;
+}
+@media screen and (max-width:1200px){
+  .pros{
+    /* background-color: red; */
+    margin: 10px;
+    height: 500px;
+  }
+  .pros_main{
+    /* background-color: blue; */
+    width: 100%;
+    height: 250px;
+  }
+  .dis_none{
+    display: inline-block;
+  }
+  .pros_img:nth-child(3n){
+    display: none;
+  }
+}
+
+
+
+
+
+.sec5{
+  text-align: center;
+  /* background-color: green; */
+  width: 95%;
+  padding-bottom: 50px;
+  background: -moz-linear-gradient(top left,#D4FF88,#ECFFCC);
+  background: -webkit-linear-gradient(top left,#D4FF88,#ECFFCC);
+  background: linear-gradient(to bottom right,#D4FF88,#ECFFCC);
+}
+.sec5_ttl{
+  padding: 100px;
+}
+
+.flow{
+  position: relative;
+  padding: 50px 10%;
+  border-radius: 10px;
+  margin: 0 15px;
+}
+
+.flow_step{
+  position: absolute;
+  top: -50px;
+  left: 25px;
+  line-height: 30px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #C4FF82;
+  border: solid 4px white;
+}
+.flow_step p{
+  padding-top: 17px;
+}
+.flow_main{
+  height: 250px;
+  text-align: left;
+}
+.flow_main img{
+  height: 250px;
+}
+.flow_txt{
+  margin-top: 3%;
+  width: 70%;
+}
+.flow_txt p{
+  margin: 3%;
+}
+.arrow{
+  height: 100px;
+}
+.arrow_down{
+  margin: 0 auto;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-bottom: solid 10px #fff;
+  border-right: solid 10px #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* .arrow_l{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+	width: 80px;
+	height: 10px;
+	background-color: #fff;
+  transform: rotate(-45deg);
+}
+.arrow_r{
+  position: absolute;
+  transform: rotate(45deg);
+  top: 50%;
+  left: 50%-40;
+	width: 80px;
+	height: 10px;
+	background-color: #fff;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
